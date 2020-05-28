@@ -1,0 +1,37 @@
+{
+  "name": "rdx-webpack-config",
+  "version": "0.0.0",
+  "description": "A tool for building a WebPack configuration object based on RDX standards.",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "test": "mocha --inline-diffs --require ts-node/register --ui exports './src/**/*.spec.(ts|tsx)'",
+    "build": "tsc ./src -o ./dist"
+  },
+  "keywords": [],
+  "author": "Resist Design",
+  "license": "MIT",
+  "dependencies": {
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.3",
+    "webpack": "^5.0.0-beta.16"
+  },
+  "devDependencies": {
+    "mocha": "^7.2.0",
+    "ts-node": "^8.10.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resistdesign/rdx-webpack-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/resistdesign/rdx-webpack-config/issues"
+  },
+  "homepage": "https://github.com/resistdesign/rdx-webpack-config#readme"
+}
